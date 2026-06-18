@@ -1,0 +1,76 @@
+[WaveFileInformation]
+   FileVersion          = 02.00                        
+[General]
+   ProjectName          = Caspian_Sea_Wave             
+   ProjectNr            = 002                          
+   Description          = Spherical Coordinates         
+   Description          = Wind files included          
+   OnlyInputVerify      = false                        
+   SimMode              = stationary                   
+   DirConvention        = cartesian                    
+   ReferenceDate        = 2019-02-20                   
+   WindSpeed            =   0.0000000e+00              
+   WindDir              =   0.0000000e+00              
+   MeteoFile            = xwind.wnd                    
+   MeteoFile            = ywind.wnd                    
+[TimePoint]
+   Time                 =   0.0000000e+00              
+   WaterLevel           =   0.0000000e+00              
+   XVeloc               =   0.0000000e+00              
+   YVeloc               =   0.0000000e+00              
+[TimePoint]
+   Time                 =   7.2000000e+02              
+   WaterLevel           =   0.0000000e+00              
+   XVeloc               =   0.0000000e+00              
+   YVeloc               =   0.0000000e+00              
+[Constants]
+   WaterLevelCorrection =   0.0000000e+00              
+   Gravity              =   9.8100004e+00              
+   WaterDensity         =   1.0250000e+03              
+   NorthDir             =   9.0000000e+01              
+   MinimumDepth         =   5.0000001e-02              
+[Processes]
+   GenModePhys          = 3                            
+   Breaking             = true                         
+   BreakAlpha           =   1.0000000e+00              
+   BreakGamma           =   7.3000002e-01              
+   Triads               = false                        
+   TriadsAlpha          =   1.0000000e-01              
+   TriadsBeta           =   2.2000000e+00              
+   WaveSetup            = false                        
+   BedFriction          = jonswap                      
+   BedFricCoef          =   6.7000002e-02              
+   Diffraction          = false                        
+   DiffracCoef          =   2.0000000e-01              
+   DiffracSteps         = 5                            
+   DiffracProp          = true                         
+   WindGrowth           = false                        
+   WhiteCapping         = Komen                        
+   Quadruplets          = false                        
+   Refraction           = true                         
+   FreqShift            = true                         
+   WaveForces           = dissipation 3d               
+[Numerics]
+   DirSpaceCDD          =   5.0000000e-01              
+   FreqSpaceCSS         =   5.0000000e-01              
+   RChHsTm01            =   2.0000000e-02              
+   RChMeanHs            =   2.0000000e-02              
+   RChMeanTm01          =   2.0000000e-02              
+   PercWet              =   9.8000000e+01              
+   MaxIter              = 15                           
+[Output]
+   TestOutputLevel      = 0                            
+   TraceCalls           = false                        
+   UseHotFile           = false                        
+   WriteCOM             = false                        
+[Domain]
+   Grid                 = Caspian_Sea_spherical.grd         
+   BedLevel             = Caspian_Sea_Spherical.dep         
+   DirSpace             = circle                       
+   NDir                 = 36                           
+   StartDir             =   0.0000000e+00              
+   EndDir               =   0.0000000e+00              
+   FreqMin              =   5.0000001e-02              
+   FreqMax              =   1.0000000e+00              
+   NFreq                = 24                           
+   Output               = true                         
